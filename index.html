@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hacker News Recreated</title>
+  <link rel="stylesheet" href="screen.css" />
+</head>
+<body>
+  <main class="site">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">Y</span>
+        <h1>Hacker News</h1>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <button data-filter="new">new</button>
+        <button data-filter="past">past</button>
+        <button data-filter="comments">comments</button>
+        <button data-filter="ask">ask</button>
+        <button data-filter="show">show</button>
+        <button data-filter="jobs">jobs</button>
+        <button data-filter="submit">submit</button>
+      </nav>
+
+      <button class="login" id="loginBtn">login</button>
+    </header>
+
+    <section class="hero">
+      <h2 id="sectionTitle">Top Stories</h2>
+      <p>A recreated Hacker News layout using semantic HTML, CSS, and interactive JavaScript.</p>
+    </section>
+
+    <section class="controls">
+      <input type="search" id="searchInput" placeholder="Search stories..." />
+      <button id="clearBtn">Clear</button>
+    </section>
+
+    <section class="stories" id="storiesList" aria-label="Story list"></section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
